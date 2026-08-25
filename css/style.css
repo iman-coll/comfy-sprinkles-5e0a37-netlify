@@ -1,0 +1,72 @@
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding-top: 56px;
+}
+
+.hero {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), #343a40;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+
+.navbar-brand { font-weight: bold; }
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-section { min-height: 420px; }
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+}
+
+.company-logo img {
+  max-width: 45px;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.skill-circle {
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px auto;
+  transition: transform 0.25s ease;
+}
+
+.skill-circle:hover { transform: scale(1.08); }
+
+footer { background-color: #343a40; }
+
+@media (max-width: 767px) {
+  section { padding-top: 45px; padding-bottom: 45px; }
+  .hero h1 { font-size: 2.5rem; }
+  .skill-circle { width: 90px; height: 90px; }
+}
